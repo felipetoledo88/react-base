@@ -1,0 +1,44 @@
+.login-btn {
+    max-width: 203px;
+    margin: 0 auto;
+    padding: 8px 15px !important;
+    border-radius: 15px !important;
+    font-size: 1rem !important;
+}
+
+.scraper-input-primary {
+    height: 52px !important;
+}
+
+.scraper-input-primary input {
+    border: 1px solid var(--primary);
+}
+
+.scraper-input-primary .input-group-text {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.login-form-container {
+    padding: 2rem;
+}
+
+@media (max-width: 992px) {
+    .vh-100 {
+        height: auto;
+    }
+
+    .login-form-container {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .scraper-input-primary {
+        height: 48px;
+    }
+
+    .login-btn {
+        width: 100%;
+    }
+}

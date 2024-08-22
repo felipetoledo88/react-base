@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background: #fff;
+}
+
+:root {
+  --primary: #0077B5;
+  --secondary: #6c757d;
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  --light: #f8f9fa;
+  --dark: #343a40;
+
+  /* Text colors */
+  --text: #212529;
+  --muted-text: #888888;
+  --danger-text: #dc3545;
+  --primary-text: #0077B5;
+  --light-text: #f8f9fa;
+
+  /* Borders */
+  --border: #dee2e6;
+
+  /* Font sizes */
+  --font-size-base: 1rem;
+  --font-size-sm: 0.875rem;
+  --font-size-lg: 1.25rem;
+
+  /* Other */
+  --border-radius: 0.25rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-size: var(--font-size-base);
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.scraper-bg-primary {
+  background-color: var(--primary) !important;
+  color: var(--light-text) !important;
+  border: none !important;
+}
+
+.scraper-text-primary {
+  color: var(--primary-text) !important;
+}
+
+
+/*Bootstrap*/
+.bg-primary {
+  background-color: var(--primary) !important;
+}

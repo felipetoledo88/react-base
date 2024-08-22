@@ -1,0 +1,114 @@
+.notification-tabs .nav-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    min-width: 90px; /* Ajuste esta largura conforme necessário */
+    padding: 0.4rem .5rem; /* Ajuste o padding conforme necessário */
+}
+
+.notification-tabs .nav-link svg{
+    color: var(--secondary);
+}
+
+.notification-tabs .nav-link:hover {
+    background-color: transparent !important;
+    color: var(--text) !important;
+}
+
+.notification-tabs .nav-link.active {
+color: var(--text) !important;
+}
+
+.notification-tabs .nav-link .badge {
+    margin-left: 0.5rem;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.notification-item:hover, .notification-item.unviewed:hover {
+   background-color: #caeafc;
+}
+
+.notification-item img {
+    width: 40px;
+    height: 40px;
+}
+
+.notification-item .notification-text {
+    flex-grow: 1;
+    margin-left: 0.5rem;
+}
+
+.notification-item .notification-time {
+    font-size: 0.85rem;
+    text-align: right;
+}
+.circle-notify{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.notification-item.unviewed {
+    background-color: #e0f7fa; /* Azul clarinho */
+}
+
+.notification-item .circle-notify {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.notification-item .circle-notify.hidden {
+    display: none;
+}
+.off-notify .offcanvas-body {
+    padding: 0 !important;
+}
+
+.off-notify .nav-tabs{
+    margin: 0 !important;
+}
+
+.rounded-5 {
+    border-radius: 5px !important;
+}
+
+.notification-item.unviewed {
+    background-color: #e0f7fa; /* Azul clarinho */
+}
+
+.notification-item .circle-notify {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    background-color: var(--primary);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.notification-item .circle-notify.hidden {
+    display: none;
+}
+.off-notify .badge{
+    line-height: normal !important;
+}

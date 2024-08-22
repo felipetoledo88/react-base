@@ -1,0 +1,25 @@
+.custom-navbar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    background-color: white;
+    border: none !important;
+    padding-right: 20px !important;
+}
+.magnifying-glass .input-group {
+    align-items: center;
+}
+
+.magnifying-glass input,.magnifying-glass .input-group-text{
+    border: none !important;
+    background-color: #f7f7f7 !important;
+    height: 38px;
+}
+
+.magnifying-glass .input-group .input-group-text{
+    border-radius:  8px 0 0 8px !important;
+ }
+
+.magnifying-glass .input-group input{
+   border-radius: 0 8px 8px 0 !important;
+}
