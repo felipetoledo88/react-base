@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { faEnvelope, faKey, faArrowRightToBracket } from '@fortawesome/free-solid-svg-icons';
-import Scraper from '../../../components/common/Scraper';
+
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import api from '../../../services/api';
 import { useAuth } from '../../../contexts/Auth';
+import Application from '../../../components/common/Aplication';
 
 const LoginForm = () => {
     const navigate = useNavigate();
@@ -55,7 +56,7 @@ const LoginForm = () => {
         <div className="bg-white p-5 shadow-lg w-100 login-form-container" style={{ maxWidth: '400px', borderRadius: '15px' }}>
             <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="scraper logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
             <Form className='pt-4' onSubmit={handleLogin}>
-                <Scraper.Input
+                <Application.Input
                     type="email"
                     placeholder="Email"
                     icon={faEnvelope}
@@ -64,7 +65,7 @@ const LoginForm = () => {
                     onChange={(e) => setEmail(e.target.value)}
                 />
 
-                <Scraper.Input
+                <Application.Input
                     type="password"
                     placeholder="Senha"
                     icon={faKey}
@@ -75,7 +76,7 @@ const LoginForm = () => {
                 <div className="d-flex justify-content-between mb-3">
                     <a href="#" className="scraper-text-primary" onClick={handleForgotPassword}>Esqueceu a senha?</a>
                 </div>
-                <Scraper.Button
+                <Application.Button
                     className='button-login login-btn mt-4'
                     loader={loader}
                     text="ENTRAR"

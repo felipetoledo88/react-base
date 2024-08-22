@@ -3,7 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { Container, Form, Col, Row } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import api from '../../services/api';
-import Scraper from '../../components/common/Scraper';
+import Application from '../../components/common/Aplication';
+
 
 const RecoverPass = () => {
     const navigate = useNavigate();
@@ -64,21 +65,21 @@ const RecoverPass = () => {
                         <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="scraper logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
 
                         <Form onSubmit={handleSubmit} noValidate className="w-100 mt-4">
-                            <Scraper.Input
+                            <Application.Input
                                 type="password"
                                 placeholder="Nova senha"
                                 className="mb-3"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
-                            <Scraper.Input
+                            <Application.Input
                                 type="password"
                                 placeholder="Confirme a nova senha"
                                 className="mb-3"
                                 value={confirmPassword}
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                             />
-                            <Scraper.Button
+                            <Application.Button
                                 className='scraper-bg-primary mt-4'
                                 loader={loader}
                                 text="REDEFINIR"

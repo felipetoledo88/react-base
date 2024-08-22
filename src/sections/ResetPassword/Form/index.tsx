@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Alert, Form } from 'react-bootstrap';
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
-import Scraper from '../../../components/common/Scraper';
+
 import { toast } from 'react-toastify';
 import api from '../../../services/api';
+import Application from '../../../components/common/Aplication';
 
 const ResetPasswordForm: React.FC = () => {
     const [loader, setLoader] = useState(false);
@@ -31,7 +32,7 @@ const ResetPasswordForm: React.FC = () => {
                 <Alert variant="info" className="mb-3">
                     Identifique-se para receber um e-mail com as instruções e o link para criar uma nova senha.
                 </Alert>
-                <Scraper.Input
+                <Application.Input
                     type="email"
                     placeholder="Email"
                     icon={faEnvelope}
@@ -39,7 +40,7 @@ const ResetPasswordForm: React.FC = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <Scraper.Button
+                <Application.Button
                     className='button-login reset-password-btn mt-4'
                     loader={loader}
                     text="ENVIAR LINK"
