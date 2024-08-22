@@ -1,5 +1,5 @@
 .plus-icon {
-  background-color: #0077B5;
+  background-color: var(--primary);
   color: white;
   border-radius: 50%;
   padding: 10px;
@@ -17,12 +17,12 @@
 
 .bottom-navbar .nav-link.active {
   background-color: transparent !important;
-  color: #0077B5 !important;
+  color: var(--primary-text) !important;
 }
 
 .bottom-navbar .nav-link:hover {
   background-color: transparent !important;
-  color: #0077B5 !important;
+  color: var(--primary-text) !important;
 }
 
 .bottom-navbar .navbar-nav .nav-link span {

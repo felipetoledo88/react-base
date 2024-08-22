@@ -43,18 +43,18 @@ const NavbarMobile = () => {
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
           placement="end"
-          style={{ backgroundColor: '#0077B5', color: '#fff', width: '414px' }}
+          style={{ backgroundColor: 'var(--primary)', color: 'var(--light-text)', width: '414px' }}
         >
           <Offcanvas.Header closeButton closeVariant="white">
             <Offcanvas.Title id="offcanvasNavbarLabel">
-              <img src={process.env.PUBLIC_URL + "/assets/images/white-logo.png"} alt="logo scraper" style={{ width: '120px' }} />
+              <img src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="logo scraper" style={{ width: '120px' }} />
             </Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-center flex-grow-1 pe-3">
-              <Nav.Link href="#action1" style={{ color: '#fff', textAlign: 'center', fontSize: '1.25rem' }}>Meu Perfil</Nav.Link>
-              <Nav.Link href="#action2" style={{ color: '#fff', textAlign: 'center', fontSize: '1.25rem' }}>Configurações</Nav.Link>
-              <Nav.Link onClick={handleLogout} style={{ color: '#fff', textAlign: 'center', fontSize: '1.25rem' }}>Sair</Nav.Link>
+              <Nav.Link href="#action1" style={{ color: 'var(--light-text)', textAlign: 'center', fontSize: '1.25rem' }}>Meu Perfil</Nav.Link>
+              <Nav.Link href="#action2" style={{ color: 'var(--light-text)', textAlign: 'center', fontSize: '1.25rem' }}>Configurações</Nav.Link>
+              <Nav.Link onClick={handleLogout} style={{ color: 'var(--light-text)', textAlign: 'center', fontSize: '1.25rem' }}>Sair</Nav.Link>
             </Nav>
           </Offcanvas.Body>
         </Offcanvas>
