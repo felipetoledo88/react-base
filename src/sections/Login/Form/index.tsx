@@ -53,7 +53,7 @@ const LoginForm = () => {
 
     return (
         <div className="bg-white p-5 shadow-lg w-100 login-form-container" style={{ maxWidth: '400px', borderRadius: '15px' }}>
-            <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.png"} alt="scraper logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
+            <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="scraper logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
             <Form className='pt-4' onSubmit={handleLogin}>
                 <Scraper.Input
                     type="email"
@@ -76,7 +76,7 @@ const LoginForm = () => {
                     <a href="#" className="scraper-text-primary" onClick={handleForgotPassword}>Esqueceu a senha?</a>
                 </div>
                 <Scraper.Button
-                    className='scraper-bg-primary login-btn mt-4'
+                    className='button-login login-btn mt-4'
                     loader={loader}
                     text="ENTRAR"
                     type="submit"

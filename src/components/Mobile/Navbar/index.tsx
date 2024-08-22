@@ -29,7 +29,7 @@ const NavbarMobile = () => {
   return (
     <Navbar expand={false} style={{ backgroundColor: '#fff' }}>
       <Container fluid>
-        <Navbar.Brand href="#"><img src={process.env.PUBLIC_URL + "/assets/images/logo.png"} alt="logo scraper" style={{ width: '120px' }} /></Navbar.Brand>
+        <Navbar.Brand href="#"><img src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="logo scraper" style={{ width: '120px' }} /></Navbar.Brand>
         <div className="d-flex align-items-center">
           <SearchOffCanvas />
           <NotificationOffCanvas />

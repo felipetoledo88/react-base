@@ -13,7 +13,7 @@ body {
 }
 
 :root {
-  --primary: #0077B5;
+  --primary: #033943;
   --secondary: #6c757d;
   --success: #28a745;
   --danger: #dc3545;
@@ -26,7 +26,7 @@ body {
   --text: #212529;
   --muted-text: #888888;
   --danger-text: #dc3545;
-  --primary-text: #0077B5;
+  --primary-text: #033943;
   --light-text: #f8f9fa;
 
   /* Borders */
@@ -52,10 +52,17 @@ a {
 }
 
 .scraper-bg-primary {
-  background-color: var(--primary) !important;
+  background: linear-gradient(to top, #000000, #033943) !important;
   color: var(--light-text) !important;
   border: none !important;
 }
+
+.button-login {
+  background: #033943 !important;
+  color: var(--light-text) !important;
+  border: none !important;
+}
+
 
 .scraper-text-primary {
   color: var(--primary-text) !important;
