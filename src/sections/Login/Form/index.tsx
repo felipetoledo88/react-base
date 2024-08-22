@@ -54,7 +54,7 @@ const LoginForm = () => {
 
     return (
         <div className="bg-white p-5 shadow-lg w-100 login-form-container" style={{ maxWidth: '400px', borderRadius: '15px' }}>
-            <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="scraper logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
+            <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="application logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
             <Form className='pt-4' onSubmit={handleLogin}>
                 <Application.Input
                     type="email"
@@ -74,7 +74,7 @@ const LoginForm = () => {
                     onChange={(e) => setPassword(e.target.value)}
                 />
                 <div className="d-flex justify-content-between mb-3">
-                    <a href="#" className="scraper-text-primary" onClick={handleForgotPassword}>Esqueceu a senha?</a>
+                    <a href="#" className="application-text-primary" onClick={handleForgotPassword}>Esqueceu a senha?</a>
                 </div>
                 <Application.Button
                     className='button-login login-btn mt-4'

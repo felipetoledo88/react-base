@@ -23,7 +23,7 @@ const Sidebar = () => {
     return (
         <div className="d-flex flex-column vh-100 sidebar" style={{ width: '250px' }}>
             <div className="d-flex align-items-center justify-content-start m-4">
-                <img src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="logo scraper" className="logo" /> {/* Use the appropriate path to your logo */}
+                <img src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="logo application" className="logo" /> {/* Use the appropriate path to your logo */}
             </div>
             <Nav defaultActiveKey="/panel" className="flex-column flex-grow-1">
                 <Nav.Link

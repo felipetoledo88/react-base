@@ -36,12 +36,12 @@ const SButton: React.FC<SButtonProps> = ({ className = '', variant = '', type = 
                 </Tooltip>
             }
         >
-            <Button variant={variant} type={type} className={`scraper-btn w-100 ${className}`} disabled={loader} onClick={onClick}>
+            <Button variant={variant} type={type} className={`application-btn w-100 ${className}`} disabled={loader} onClick={onClick}>
                 {buttonContent}
             </Button>
         </OverlayTrigger>
     ) : (
-        <Button variant={variant} type={type} className={`scraper-btn w-100 ${className}`} disabled={loader} onClick={onClick}>
+        <Button variant={variant} type={type} className={`application-btn w-100 ${className}`} disabled={loader} onClick={onClick}>
             {buttonContent}
         </Button>
     );

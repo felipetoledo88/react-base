@@ -60,9 +60,9 @@ const RecoverPass = () => {
     return (
         <Container fluid className="vh-100 d-flex" style={{ padding: 0, maxHeight: '100svh' }}>
             <Row className="w-100" style={{ margin: 0 }}>
-                <Col lg={12} className="d-flex align-items-center justify-content-center scraper-bg-primary">
+                <Col lg={12} className="d-flex align-items-center justify-content-center application-bg-primary">
                     <div className="bg-white p-5 shadow-lg w-100 reset-password-form-container" style={{ maxWidth: '400px', borderRadius: '15px' }}>
-                        <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="scraper logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
+                        <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="application logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
 
                         <Form onSubmit={handleSubmit} noValidate className="w-100 mt-4">
                             <Application.Input
@@ -80,7 +80,7 @@ const RecoverPass = () => {
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                             />
                             <Application.Button
-                                className='scraper-bg-primary mt-4'
+                                className='application-bg-primary mt-4'
                                 loader={loader}
                                 text="REDEFINIR"
                                 type="submit"

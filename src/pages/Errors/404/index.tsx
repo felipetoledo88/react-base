@@ -13,7 +13,7 @@ const NotFound = () => {
             <FontAwesomeIcon icon={faExclamationTriangle} size="4x" className="mb-4 text-warning" />
             <h1 className="display-4">404 - Página não encontrada</h1>
             <p className="lead">A página que você está procurando não existe ou foi removida.</p>
-            <Button variant="primary" className="scraper-bg-primary" onClick={() => navigate('/panel')}>Voltar</Button>
+            <Button variant="primary" className="application-bg-primary" onClick={() => navigate('/panel')}>Voltar</Button>
         </div>
     );
 };

@@ -27,7 +27,7 @@ const ResetPasswordForm: React.FC = () => {
 
     return (
         <div className="bg-white p-5 shadow-lg w-100 reset-password-form-container" style={{ maxWidth: '400px', borderRadius: '15px' }}>
-            <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="scraper logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
+            <img className='mb-4' src={process.env.PUBLIC_URL + "/assets/images/logo.svg"} alt="application logo" style={{ width: '160px', margin: '0 auto', display: 'block' }} />
             <Form className='pt-4' onSubmit={handleResetPassword}>
                 <Alert variant="info" className="mb-3">
                     Identifique-se para receber um e-mail com as instruções e o link para criar uma nova senha.

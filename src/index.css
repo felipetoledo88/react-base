@@ -51,7 +51,7 @@ a {
   text-decoration: none !important;
 }
 
-.scraper-bg-primary {
+.application-bg-primary {
   background: linear-gradient(to top, #000000, #033943) !important;
   color: var(--light-text) !important;
   border: none !important;
@@ -64,7 +64,7 @@ a {
 }
 
 
-.scraper-text-primary {
+.application-text-primary {
   color: var(--primary-text) !important;
 }
 

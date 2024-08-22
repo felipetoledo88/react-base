@@ -6,7 +6,7 @@ const ResetPassword = () => {
     return (
         <Container fluid className="vh-100 d-flex" style={{ padding: 0, maxHeight: '100svh' }}>
             <Row className="w-100" style={{ margin: 0 }}>
-                <Col lg={12} className="d-flex align-items-center justify-content-center scraper-bg-primary">
+                <Col lg={12} className="d-flex align-items-center justify-content-center application-bg-primary">
                     <ResetPasswordForm />
                 </Col>
             </Row>

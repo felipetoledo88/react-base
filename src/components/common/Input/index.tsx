@@ -14,7 +14,7 @@ type FormInputGroupProps = {
 
 const Input: React.FC<FormInputGroupProps> = ({ className, type, placeholder, icon, value, onChange }) => {
     return (
-        <Form.Group className={`${icon ? 'scraper-input' : 'scraper-input-border'  } scraper-input-primary ${className}`}>
+        <Form.Group className={`${icon ? 'application-input' : 'application-input-border'  } application-input-primary ${className}`}>
             <InputGroup>
                 {icon ? (
                     <>
