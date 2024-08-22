@@ -10,7 +10,7 @@ const CustomNavbar: React.FC = () => {
     return (
         <Navbar expand="lg" className="custom-navbar">
             <DropdownSearch /> 
-            <Button className="scraper-bg-primary me-2">
+            <Button className="button-login me-2">
                 <FontAwesomeIcon icon={faPlus} className="me-1" /> Novo Chat
             </Button>
             <Dropdown align="end" className="me-2">
